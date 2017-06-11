@@ -189,7 +189,7 @@
             <!-- /.navbar-collapse -->
         </nav>
 
-        <div id="page-wrapper">
+        <div id="page-wrapper" class="test">
 
             <div class="container-fluid">
 
@@ -537,6 +537,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- main js -->
+     <script src="js/main.js"></script>
 
 </body>
 

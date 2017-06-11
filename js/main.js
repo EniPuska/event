@@ -1,3 +1,4 @@
+
 $('.BtnEdit').click(function() {
-    alert ('test');
+    $('.test').hide(600);
 });
