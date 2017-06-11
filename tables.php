@@ -513,7 +513,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button id ="add_info"type="button" class="btn btn-lg btn-primary">Add Info</button>
+                            <button id ="add_info"type="button" class="btn btn-lg btn-primary BtnEdit">Add Info</button>
                         </div>
                     </div>
                     <div class="col-lg-6">
