@@ -1,54 +1,5 @@
 <?php
-/* ----------------------------------------------------- */
-/*
-	VERSION			: 1.0
-	Created By	: Μιχάλης Αλεξανδρόπουλος
-	Copyright		: 2014-2017
-	INFO				: Κλάση για τη σύνδεση με τη Βάση Δεδομένων (Data Base)
-	All Rights Reserved
 
-	Η παρακάτω κλάση συνδέεται είτε με MySQL είτε με SQLite Βάσεις Δεδομένων.
-	Αν δεν μπορεί να συνδεθεί επιστρέφει το κωδικό λάθους και τελειώνει το κώδικά εκεί (die).
-
-	Αν συνδεθεί εκτελεί την SQL εντολή που του έχουμε περάσει.
-	Αν η εντολή δεν μπορεί να εκτελεστεί επιστρέφει το μήνυμα λάθους.
-
-	Για να διαβάσουμε τις εγγραφές χρησιμοποιούμε
-	MySQL:	$DATASET['Data']->fetch_assoc()
-	SQLite:	$DATASET['Data']->fetchArray()
-
-	Για MySQL χρησιμοποιούμε το παρακάτω παράδειγμα
-		$Data = new DBCON();
-		$DATASET = $Data->RunQuery('SELECT * FROM tbl_test','MySQL');
-		//ΣΗΜΕΙΩΣΗ: Η δεύτερη μεταβλητή μπορεί να μην γραφεί οπότε και δέχεται τη αρχική ΣΤΑΘΕΡΆ που έχουμε δηλώσει στο SQL_ENGINE.
-		//$DATASET = $Data->RunQuery('SELECT * FROM tbl_test');
-
-		if (!$DATASET['Error']) {
-			while ($DATA_ROW = $DATASET['Data']->fetch_assoc()){
-				echo $DATA_ROW['Code'].' ---> '.$DATA_ROW['Perig'].'<br>';
-			}
-			unset($DATASET);
-		} else {
-			echo $DATASET['Data'].'<br>';
-		}
-
-
-	Για SQLite χρησιμοποιούμε το παρακάτω παράδειγμα
-		$Data = new DBCON();
-		$DATASET = $Data->RunQuery('SELECT * FROM tbl_test','SQLite');
-		//ΣΗΜΕΙΩΣΗ: Η δεύτερη μεταβλητή μπορεί να μην γραφεί οπότε και δέχεται τη αρχική ΣΤΑΘΕΡΆ που έχουμε δηλώσει στο SQL_ENGINE.
-		//$DATASET = $Data->RunQuery('SELECT * FROM tbl_test');
-
-		if (!$DATASET['Error']) {
-			while ($DATA_ROW = $DATASET['Data']->fetchArray()){
-				echo $DATA_ROW['Code'].' ---> '.$DATA_ROW['Perig'].'<br>';
-			}
-			unset($DATASET);
-		} else {
-			echo $DATASET['Data'].'<br>';
-		}
-*/
-/* ----------------------------------------------------- */
 class DBCON {
 	/* Σύνδεση σε MySQL Βάση Δεδομένων */
 	private function MySQLConnect(){

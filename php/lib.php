@@ -3,9 +3,9 @@
 	define('SQL_ENGINE', 'MySQL');
 	define('DIR_DATABASE', 'basedb.sqlite');
 	define('DB_HOSTNAME', 'localhost');
-	define('DB_DATABASE', 'prot_trial');
-	define('DB_USERNAME', 'test');
-	define('DB_PASSWORD', 'test');
+	define('DB_DATABASE', 'appointment');
+	define('DB_USERNAME', 'eni');
+	define('DB_PASSWORD', 'eni');
 
 // cls lib
 	require_once 'dbcon.php';			// Basic Connection Class
