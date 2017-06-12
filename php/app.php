@@ -56,6 +56,7 @@ function TestData(){
         <td>'.$DATA_ROW['Visits'].'</td>
         <td>'.$DATA_ROW['New Visits'].'</td>
         <td>'.$DATA_ROW['Revenue'].'</td>
+        <td><button class="btn btn-primary BtnEdit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
         </tr>';
     }
   }else{

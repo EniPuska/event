@@ -225,6 +225,7 @@
                                         <th>Visits</th>
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
+                                        <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -243,6 +244,7 @@
                                         <th>Visits</th>
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
+                                        <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -265,6 +267,7 @@
                                         <th>Visits</th>
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
+                                        <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -283,6 +286,7 @@
                                         <th>Visits</th>
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
+                                        <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -311,7 +315,7 @@
                                  <?php echo TestData(); ?>
                                 </tbody>
                             </table>
-                            <button id ="add_info"type="button" class="btn btn-lg btn-primary BtnEdit">Add Info</button>
+                            <button id ="add_info"type="button" class="btn btn-lg btn-primary BtnAdd">Add Info</button>
                         </div>
                     </div>
                     <div class="col-lg-6">

@@ -1,5 +1,5 @@
 
-$('.BtnEdit').click(function() {
+$('.BtnAdd').click(function() {
     $('.test').hide(600);
     $('.DataDiv').show(600);
 });
