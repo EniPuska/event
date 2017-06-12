@@ -320,16 +320,38 @@
                     </div>
                 </div>
                 <!-- /.row -->
-
+                
+                
             </div>
             <!-- /.container-fluid -->
-
+            
         </div>
         <!-- /#page-wrapper -->
-
+        <div id="page-wrapper" class="DataDiv">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div>
+                            <h2>Add Information</h2>
+                            <label class="label_fld">New Page</label>
+                            <input type="text" id="username" class="Fld"/>
+                            <label class="label_fld">Visits</label>
+                            <input type="text" id="username" class="Fld"/>
+                            <label class="label_fld">%New Visits</label>
+                            <input type="text" id="username" class="Fld"/>
+                            <label class="label_fld">Revenue</label>
+                            <input type="text" id="username" class="Fld"/>
+                            <div class="BTN">
+                                <button id="BtnBack" class="btn btn-primary"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                                <button id="BtnSave" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
-    <!-- /#wrapper -->
-
+    <!-- /#wrapper -->       
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

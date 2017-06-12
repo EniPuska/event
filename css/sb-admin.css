@@ -16,7 +16,9 @@ body {
         margin-top: 50px;
     }
 }
-
+.DataDiv{
+    display:none;
+}
 #wrapper {
     padding-left: 0;
 }
@@ -225,3 +227,27 @@ ul.alert-dropdown {
 .panel-yellow > a:hover {
     color: #df8a13;
 }
+.Fld{
+    width:100%;
+    margin:0.8em;
+}
+.label_fld{
+    margin:0.8em;
+    font-weight: bold;
+    color:#283E4A;
+}
+#BtnBack{
+    float:right;
+    background-color: #283E4A;
+}
+#BtnSave{
+    float:right;
+    margin-right:0.8em;
+    background-color: #283E4A;
+}
+
+.BTN{
+    width:100%;
+    margin: 0.8em;
+}
+
