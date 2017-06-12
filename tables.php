@@ -226,6 +226,7 @@
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
                                         <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -245,6 +246,7 @@
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
                                         <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -268,6 +270,7 @@
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
                                         <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -287,6 +290,7 @@
                                         <th>% New Visits</th>
                                         <th>Revenue</th>
                                         <th>Edit</th>
+                                        <th>Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -336,19 +340,22 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div>
-                            <h2>Add Information</h2>
-                            <label class="label_fld">New Page</label>
-                            <input type="text" id="username" class="Fld"/>
-                            <label class="label_fld">Visits</label>
-                            <input type="text" id="username" class="Fld"/>
-                            <label class="label_fld">%New Visits</label>
-                            <input type="text" id="username" class="Fld"/>
-                            <label class="label_fld">Revenue</label>
-                            <input type="text" id="username" class="Fld"/>
-                            <div class="BTN">
-                                <button id="BtnBack" class="btn btn-primary"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-                                <button id="BtnSave" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
-                            </div>
+                            <form action="insert.php" method="post">    
+                                <h2>Add Information</h2>
+                                <label class="label_fld">New Page</label>
+                                <input type="text" name="page" id="page" class="Fld"/>
+                                <label class="label_fld">Visits</label>
+                                <input type="text" name="visits" id="visits" class="Fld"/>
+                                <label class="label_fld">%New Visits</label>
+                                <input type="text" name="new_visits" id="new_visits" class="Fld"/>
+                                <label class="label_fld">Revenue</label>
+                                <input type="text" name="revenue" id="revenue" class="Fld"/>
+                                <div class="BTN">
+                                    <button id="BtnSave" class="btn btn-primary" type="submit"value="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                                </div> 
+                            </form> 
+                                <button id="BtnBack" class="btn btn-primary back"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                                  
                         </div>
                     </div>
                 </div>

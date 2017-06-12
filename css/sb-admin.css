@@ -242,8 +242,14 @@ ul.alert-dropdown {
 }
 #BtnSave{
     float:right;
-    margin-right:0.8em;
     background-color: #283E4A;
+}
+.BtnDelete{
+    background-color: #CC181E;
+    border-color: inherit;
+}
+.back{
+    margin-right:0.8em;
 }
 .BTN{
     width:100%;
