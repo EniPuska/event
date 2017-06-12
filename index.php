@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+  require_once('php/lib.php');
+?>
 <html lang="en">
 
 <head>

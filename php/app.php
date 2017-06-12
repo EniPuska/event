@@ -43,4 +43,26 @@ function FindPelatisPhones($PelAA) {
   }
   return $PhoneRows;
 }
+
+function TestData(){
+  $TestRows = '';
+  $Data = new DBCON();
+  $Query = 'SELECT * FROM tbl_bordered';
+  $DATASET = $Data->RunQuery($Query);
+  if(!$DATASET['Error']){
+    foreach($DATASET['Data'] as $DATA_ROW){
+      $TestRows .= '<tr>
+        <td>'.$DATA_ROW['Page'].'</td>
+        <td>'.$DATA_ROW['Visits'].'</td>
+        <td>'.$DATA_ROW['New Visits'].'</td>
+        <td>'.$DATA_ROW['Revenue'].'</td>
+        </tr>';
+    }
+  }else{
+     echo $DATASET['Data'];
+    die;
+  }
+  unset($DATASET,$Data);
+  return $TestRows;
+}
 ?>
