@@ -1,32 +1,4 @@
 <?php
-function LoadPelatisData() {
-// Basic Function that loads the table of register users
-  $UserRows = '';
-  $Data = new DBCON();
-  $Query = 'SELECT * FROM tbl_userdata';
-  $DATASET = $Data->RunQuery($Query);
-  if (!$DATASET['Error']) {
-    foreach ($DATASET['Data'] as $DATA_ROW) {
-      if ($DATA_ROW['active'] == 0) {
-        $active = 'NO';
-      } else {
-        $active = 'YES';
-      }
-      $UserRows .= '<tr>
-        <td>'.$DATA_ROW['username'].'</td>
-        <td>'.$DATA_ROW['usermail'].'</td>
-
-
-        <td><button id="'.$DATA_ROW['userid'].'" class="btn btn-primary BtnEdit">Edit</button></td>
-      </tr>';
-    }
-  } else {
-    echo $DATASET['Data'];
-    die;
-  }
-  unset($DATASET,$Data);
-  return $UserRows;
-}
 function FindPelatisPhones($PelAA) {
   $PhoneRows = '';
 
@@ -51,12 +23,32 @@ function TestData(){
   $DATASET = $Data->RunQuery($Query);
   if(!$DATASET['Error']){
     foreach($DATASET['Data'] as $DATA_ROW){
-      $TestRows .= '<tr>
+      $TestRows .= '
+        <tr>
         <td>'.$DATA_ROW['page'].'</td>
         <td>'.$DATA_ROW['visits'].'</td>
         <td>'.$DATA_ROW['new_visits'].'</td>
         <td>'.$DATA_ROW['revenue'].'</td>
-        <td><button class="btn btn-primary BtnEdit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+        <td><button class="btn btn-primary BtnEdit" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o" aria-hidden="true" ></i></button></td>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Update Content</h4>
+              </div>
+                <div class="modal-body">
+                  <label class="label_fld">Page</label>
+                  <input type="text" name="page" id="page" class="Fld"/>
+                  <label class="label_fld">Visits</label>
+                  <input type="text" name="visits" id="visits" class="Fld"/>
+                  <label class="label_fld">%New Visits</label>
+                  <input type="text" name="new_visits" id="new_visits" class="Fld"/>
+                  <label class="label_fld">Revenue</label>
+                  <input type="text" name="revenue" id="revenue" class="Fld"/>
+                </div>
+            </div>  
+          </div>
+        </div>
         <td><button class="btn btn-primary BtnDelete"><i class="fa fa-trash-o" aria-hidden="true"></i></button></td>
         </tr>';
     }
